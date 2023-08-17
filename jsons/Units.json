@@ -15,7 +15,7 @@
 		"cost": 30,
 		"requiredTech": "Sailing",
 		"uniques": ["Cannot enter ocean tiles <before discovering [Astronomy]>","May create improvements on water resources",
-        "Can construct [Offshore Wind Farm] <after discovering [Terraforming]>","Uncapturable"]
+        "Can instantly construct a [Offshore Wind Farm] improvement <by consuming this unit> <after discovering [Terraforming]>","Uncapturable"]
 	},
     {
 		"name": "Scout",
@@ -38,7 +38,7 @@
 		"cost": 375	,	
 		"movement": 2,
 		"requiredTech": "Archaeology",
-		"uniques": ["Can construct [Excavation Site]","Uncapturable"],
+		"uniques": ["Can instantly construct a [Excavation Site] improvement <by consuming this unit>","Uncapturable"],
 	},
 	{
 		"name": "Recon",
@@ -285,7 +285,7 @@
 		"unitType": "Civilian",
 		"requiredTech": "Radio",
 		"movement": 2,
-		"uniques": ["Can construct [Concert Venue]","Uncapturable"],
+		"uniques": ["Can instantly construct a [Concert Venue] improvement <by consuming this unit>","Uncapturable"],
 		"cost": 500,
 	},
 	{
@@ -293,7 +293,7 @@
 		"unitType": "Civilian",
 		"requiredTech": "Corporations",
 		"movement": 2,
-		"uniques": ["Can construct [Industry]","Uncapturable"],
+		"uniques": ["Can instantly construct a [Industry] improvement <by consuming this unit>","Uncapturable"],
 		"cost": 500,
 		"civilopediaText": [
 			{"text": "Construct Industries on Luxury Resources you have copies of and cannot trade."}
@@ -305,7 +305,7 @@
 		"cost": 500,	
 		"movement": 2,
 		"requiredTech": "Combustion",
-		"uniques": ["Can construct [Supply Route]","Uncapturable"],
+		"uniques": ["Can instantly construct a [Supply Route] improvement <by consuming this unit>","Uncapturable"],
 		"civilopediaText": [
 			{"text": "Construct Supply Routes on Strategic Resources your empire no longer uses."}
 		]
@@ -391,7 +391,7 @@
 		"name": "Architect",
 		"unitType": "Civilian",
 		"movement": 2,
-		"uniques": ["Can build [Land] improvements on tiles","Can construct [Power Plant]","Can construct [Water Tower]","Can construct [Industrial Complex]","Can construct [Residential]"],
+		"uniques": ["Can build [Land] improvements on tiles","Can instantly construct a [Power Plant] improvement <by consuming this unit>","Can instantly construct a [Water Tower] improvement <by consuming this unit>","Can instantly construct a [Industrial Complex] improvement <by consuming this unit>","Can instantly construct a [Residential] improvement <by consuming this unit>"],
 		"requiredTech": "Infraestructure",
 		"cost": 540
 	},
@@ -836,13 +836,13 @@
     {
 		"name": "Great Spacefarer",
 		"unitType": "Civilian",
-		"uniques": ["Can start an [12]-turn golden age", "Can construct [Space Platform] <starting from the [Atomic era]>", "Great Person - [Spacefarer]", "Unbuildable", "Uncapturable"],
+		"uniques": ["Can start an [12]-turn golden age", "Can instantly construct a [Space Platform] improvement <by consuming this unit> <starting from the [Atomic era]>", "Great Person - [Spacefarer]", "Unbuildable", "Uncapturable"],
 		"movement": 2
 	},
 	{
 		"name": "Great General",
 		"unitType": "Civilian",
-		"uniques": ["Can start an [8]-turn golden age","[+15]% Strength bonus for [Military] units within [2] tiles <before adopting [Propaganda]>","[+30]% Strength bonus for [Military] units within [2] tiles <after adopting [Propaganda]>", "Can construct [Citadel]",
+		"uniques": ["Can start an [8]-turn golden age","[+15]% Strength bonus for [Military] units within [2] tiles <before adopting [Propaganda]>","[+30]% Strength bonus for [Military] units within [2] tiles <after adopting [Propaganda]>", "Can instantly construct a [Citadel] improvement <by consuming this unit>",
 			"Great Person - [War]", "Unbuildable", "Uncapturable"],
 		"movement": 2
 	},
@@ -851,8 +851,8 @@
 		"unitType": "Civilian",
 		"uniqueTo": "Mongolia",
 		"replaces": "Great General",
-		"uniques": ["Can start an [8]-turn golden age","[+15]% Strength bonus for [Military] units within [2] tiles <before adopting [Propaganda]>","[+30]% Strength bonus for [Military] units within [2] tiles <after adopting [Propaganda]>"
-		"All adjacent units heal [+15] HP when healing", "[+15] HP when healing", "Can construct [Citadel]", "Great Person - [War]", "Unbuildable", "Uncapturable"],
+		"uniques": ["Can start an [8]-turn golden age","[+15]% Strength bonus for [Military] units within [2] tiles <before adopting [Propaganda]>","[+30]% Strength bonus for [Military] units within [2] tiles <after adopting [Propaganda]>",
+		"All adjacent units heal [+15] HP when healing", "[+15] HP when healing", "Can instantly construct a [Citadel] improvement <by consuming this unit>", "Great Person - [War]", "Unbuildable", "Uncapturable"],
 		"movement": 5
 	},
 //Time Machine Parts
@@ -910,7 +910,7 @@
 		"cost": 265,
 		"requiredTech": "The Internet",
 		"uniques": ["Can only attack [Cyber] units",
-		"[50]% chance to intercept air attacks"
+		"[50]% chance to intercept air attacks",
 		"May capture killed [Cyber] units <with [33]% chance>",
 		"[+50]% Strength <vs [Cyber] units>",
 		"[+50]% Strength <vs [Cyber] units> <when attacking>",
@@ -966,7 +966,7 @@
 		"requiredTech": "Automation",
 		"uniques": ["Hacker",
 		"+33% Strength for adjacent non-air Units vs Cyber units",
-		"25% Chance for Adjacent units to capture Killed Cyber unit"
+		"25% Chance for Adjacent units to capture Killed Cyber unit",
 		"Can see invisible [All] units",
 		"Invisible to non-adjacent units",
 		"[50]% chance to intercept air attacks",
@@ -989,7 +989,7 @@
 		"requiredBuilding": "Monolith Portal",
 		"uniques": ["Hacker",
 		"+33% Strength for adjacent non-air Units vs Cyber units",
-		"25% Chance for Adjacent units to capture Killed Cyber unit"
+		"25% Chance for Adjacent units to capture Killed Cyber unit",
 		"Can see invisible [Stealth Support] units",
 		"Invisible to non-adjacent units",
 		"[50]% chance to intercept air attacks",
